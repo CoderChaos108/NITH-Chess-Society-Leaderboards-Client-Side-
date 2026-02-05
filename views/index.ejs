@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>NITH Chess Society Leaderboards</title>
+</head>
+<body class="home">
+    <h1 class="header">NITH Chess Society Leaderboards</h1>
+    </div>
+    <div class="container">
+      <div class="sidebar">
+
+  <img src="images/logo.png" class="logo">
+
+  <h3 class="society-title">NITH Chess Society</h3>
+
+  <div class="society-links">
+      <a href="https://www.instagram.com/chess_society_nith/" target="_blank" rel="noopener noreferrer">Instagram</a>
+  </div>
+
+  <hr class="divider">
+
+  <div class="creator-section">
+      <p class="made-by">Created by</p>
+      <h5 class="creator-name">Ayush Chauhan</h5>
+      <p class="love">with love ♟️</p>
+
+      <div class="contact">
+          <p class="contact-title">Contact</p>
+          <a href="mailto:24bee025@nith.ac.in" targer="_blank" rel="noopener noreferrer">Email</a>
+          <a href="https://github.com/CoderChaos108" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/ayush-chauhan-071918353" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+  </div>
+
+</div>
+
+      <% users.forEach(user => { %>
+  <div class="container leaderboard">
+    <div class="row">
+      <% if (user.id !== "drunkenMaster04") { %>
+        <div class="col-1 border"><%= user.rank %></div>
+      <% } else { %>
+        <div class="col-1 border"><%= "👑" %></div>
+      <% } %>
+      <div class="col-4 border"><%= user.id %></div>
+      <div class="col-2 border"><%= user.rating %></div>
+      <div class="col-2 border"><%= user.batch %></div>
+    </div>
+  </div>
+<% }) %>
+
+    </div>
+
+      
+</body>
+</html>
