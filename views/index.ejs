@@ -49,7 +49,14 @@
       <% } else { %>
         <div class="col-1 border"><%= "👑" %></div>
       <% } %>
-      <div class="col-4 border"><%= user.id %></div>
+      <div class="col-4 border">
+        <a class="plain-link"
+          href="https://www.chess.com/member/<%= encodeURIComponent(user.id) %>"
+          target="_blank"
+          rel="noopener noreferrer">
+          <%= user.id %>
+        </a>
+      </div>
       <div class="col-2 border"><%= user.rating %></div>
       <div class="col-2 border"><%= user.batch %></div>
     </div>
