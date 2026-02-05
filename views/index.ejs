@@ -43,6 +43,7 @@
         </div>
       </div>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   </div>
 
 </div>
@@ -98,6 +99,39 @@
 
   </div>
 
+=======
+    </div>
+    <div class="leaderboard_Wrapper">
+
+      <% users.forEach(user=> { %>
+        <div class="container leaderboard">
+          <div class="row">
+            <% if (user.id !=="drunkenMaster04" ) { %>
+              <div class="col-1 border">
+                <%= user.rank %>
+              </div>
+              <% } else { %>
+                <div class="col-1 border">
+                  <%= "👑" %>
+                </div>
+                <% } %>
+                  <div class="col-4 border">
+                    <%= user.id %>
+                  </div>
+                  <div class="col-2 border">
+                    <%= user.rating %>
+                  </div>
+                  <div class="col-2 border">
+                    <%= user.batch %>
+                  </div>
+          </div>
+        </div>
+        <% }) %>
+    </div>
+
+  </div>
+
+>>>>>>> Stashed changes
 </body>
 
 </html>

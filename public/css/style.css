@@ -147,6 +147,7 @@ body {
     }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   .container.leaderboard {
     margin-left: 0;
     margin-top:1%;
@@ -164,10 +165,28 @@ a.plain-link:hover {
   text-decoration: underline; 
 }
 =======
+=======
+>>>>>>> Stashed changes
     .sidebar {
         position: relative;
         width: 100%;
     }
+<<<<<<< Updated upstream
+
+    .container.leaderboard {
+        margin-left: 0;
+        margin-top: 1%;
+    }
+
+    .col-1,
+    .col-2,
+    .col-4 {
+        width: 25%;
+    }
+
+}
+>>>>>>> Stashed changes
+=======
 
     .container.leaderboard {
         margin-left: 0;
